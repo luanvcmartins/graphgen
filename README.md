@@ -1,4 +1,12 @@
+This fork allows this library to be installed on Windows. Only the `extra_compile_args` and the way arrays are instantiated was changed. Additionally, I also removed a print that I didn't want when generating some networks. It's here solely because I will likely need it in the future, and I don't want to go through the trouble of figuring out what needs to be changed again. Thanks to Nathaniel for this Python API.
+
 Contains a module for generating hierarchical modular networks, a stochastic block model, a two community block model, and LFR benchmark graphs. Install using either setuptools or pip:
+
+```bash
+pip install git+https://github.com/luanvcmartins/graphgen.git
+```
+
+Or the original:
 
 ```bash
 pip install git+https://github.com/Nathaniel-Rodriguez/graphgen.git

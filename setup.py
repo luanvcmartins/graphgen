@@ -1,5 +1,5 @@
 from setuptools import setup, Extension
-
+import sys
 
 def readme():
     with open('README.md') as f:
@@ -7,7 +7,7 @@ def readme():
 
 
 # Compiler settings
-extra_compile_args = ['-std=c++14', '-Wno-write-strings']
+extra_compile_args = ['/std:c++14', '/w'] if sys.platform.startswith("win") else ['-std=c++14', '-Wno-write-strings']
 extra_link_args = ['-Wl,--verbose', '-lstdc++']  #-lc++ for clang?
 
 # Get numpy include dirs

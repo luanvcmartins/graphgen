@@ -622,7 +622,7 @@ int weights(deque<set<int> > & ein, deque<set<int> > & eout, const deque<deque<i
 	
 	
 	
-	double strs[VE.size()]; // strength of the nodes
+	double * strs = new double[VE.size()]; // strength of the nodes
 	// build a matrix like this: deque < map <int, double > > each row corresponds to link - weights 
 
 	

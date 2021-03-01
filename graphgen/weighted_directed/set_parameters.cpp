@@ -437,7 +437,7 @@ bool set_from_file(string & file_name, Parameters & par1) {
 
 
 	int h= file_name.size();
-	char b[h+1];
+	char *b = new char[h+1];
 	cast_string_to_char(file_name, b);
 	
 	ifstream in(b);

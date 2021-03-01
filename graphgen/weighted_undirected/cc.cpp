@@ -131,7 +131,7 @@ int cclu(deque<set<int> > & en, const deque<deque<int> > & member_list, const de
 		
 	
 	double cc0=compute_cc(en);
-	cout<<"Average Clustering coefficient... "<<cc0<<" trying to reach "<<ca<<endl;
+	//cout<<"Average Clustering coefficient... "<<cc0<<" trying to reach "<<ca<<endl;
 	
 	
 	deque<double> ccs;
@@ -280,7 +280,7 @@ int cclu(deque<set<int> > & en, const deque<deque<int> > & member_list, const de
 			num_p=50;
 
 		
-		cout<<"Average Clustering coefficient... "<<cc0<<" trying to reach "<<ca<<"\t\t expected "<<num_p<<" more step(s) "<<endl;
+		//cout<<"Average Clustering coefficient... "<<cc0<<" trying to reach "<<ca<<"\t\t expected "<<num_p<<" more step(s) "<<endl;
 
 	}
 	
